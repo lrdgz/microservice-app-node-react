@@ -1,0 +1,8 @@
+
+POST http:://localhost:4000/posts
+Content-Type: application/json
+Accept: application/json
+
+{
+    "title": "new posts"
+}
