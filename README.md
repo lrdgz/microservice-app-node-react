@@ -17,6 +17,7 @@ Simple example using microservice with node and React
 - minikube start
 - kubectl get po -A
 - kubectl apply -f .\[file].yml
+- kubectl apply -f .
 - kubectl get pods
 - kubectl exec -it [pod_name] [cmd] sh
 - kubectl logs [pod_name]
