@@ -1,2 +1,28 @@
 # microservice-app-node-react
 Simple example using microservice with node and React
+
+
+# DOCKER COMMANDS
+
+- docker build .
+- docker push  [conainer_name]
+- docker run [container_id]
+- docker build -t [container_name] .
+- docker run [container_name]
+- docker run -it [container_name] sh
+- docker logs [container_id]
+
+
+# KUBERNETES (Minikube)
+- minikube start
+- kubectl get po -A
+- kubectl apply -f .\[file].yml
+- kubectl get pods
+- kubectl exec -it [pod_name] [cmd] sh
+- kubectl logs [pod_name]
+- kubectl delete pod [pod_name]
+- kubectl delete deployment [deploy_name]
+- kubectl describe deployment [deploy_name]
+- kubectl rollout restart deployment [deploy_name]
+- kubectl get services
+- kubectl describe service [service_name]
