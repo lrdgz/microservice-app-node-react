@@ -15,6 +15,8 @@ Simple example using microservice with node and React
 
 # KUBERNETES (Minikube)
 - minikube start
+- minikube addons enable ingress
+- kubectl get pods -n ingress-nginx
 - kubectl get po -A
 - kubectl apply -f .\[file].yml
 - kubectl apply -f .
@@ -27,3 +29,8 @@ Simple example using microservice with node and React
 - kubectl rollout restart deployment [deploy_name]
 - kubectl get services
 - kubectl describe service [service_name]
+
+
+
+- kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/nginx-0.30.0/deploy/static/mandatory.yaml
+- kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/nginx-0.30.0/deploy/static/provider/cloud-generic.yaml
